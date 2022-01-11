@@ -10,3 +10,4 @@ export const FancyButton = styled.button`
     color: white;
   }
 `
+
