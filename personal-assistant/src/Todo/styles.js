@@ -9,6 +9,12 @@ export const StyledContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+
+    &:hover {
+    box-shadow: 2px 2px 11px ${ ({theme}) => theme.color.blue }; 
+  }
+    
+
   
 `
 

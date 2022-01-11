@@ -12,7 +12,7 @@ export const PrettyContainer = styled.div`
 
 export const PrettyH3 = styled.h3`
     font-family: ${ ({theme}) => theme.font.h3.family };
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     color: ${ ({theme}) => theme.color.blue };
     

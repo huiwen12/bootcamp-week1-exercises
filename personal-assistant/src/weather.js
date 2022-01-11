@@ -18,8 +18,16 @@ const Weather = () => {
     return(
         <>
             <div> Today's Weather @ Manhattan</div>  
-            <PrettyParagraph>Description: {weather ? weather.weather[0].description : "Loading..."}</PrettyParagraph>
-            <PrettyParagraph>{weather ? weather.main.temp : "Loading..."}</PrettyParagraph>
+            <PrettyParagraph>
+                Weather Description: {weather ? weather.weather[0].description : "Loading..."}
+                <br />
+                Temperature: {weather ? weather.main.temp : "Loading..."} K
+                <br />
+                Humidity: {weather ? weather.main.humidity: "Loading..."} %
+                <br /> 
+                Wind Speed: {weather ? weather.wind.speed: "Loading..."} mph
+            </PrettyParagraph>
+            <PrettyParagraph><i>Data from api.openweathermap.org</i></PrettyParagraph>
         </>
     )   
     
